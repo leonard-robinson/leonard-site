@@ -1,0 +1,27 @@
+# Decap CMS Configuration for Cloudflare Pages
+#
+# INSTRUCTIONS:
+# 1. Replace "GITHUB_USERNAME" below with Leonard's actual GitHub username
+# 2. After setting up OAuth app, rename this file to config.yml (replacing the old one)
+
+backend:
+  name: github
+  repo: leonard-robinson/leonard-site
+  branch: main
+  base_url: https://leonardarobinson.com
+  auth_endpoint: /auth
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
