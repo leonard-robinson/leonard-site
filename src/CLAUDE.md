@@ -7,5 +7,78 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
-| #8145 | 1:34 PM | 🔵 | Leonard Site CSS Architecture Reviewed | ~459 |
+| #8177 | 1:35 PM | ✅ | Newsletter Section Fade-In Delay Added | ~330 |
+| #8175 | " | ✅ | Publication Ticker Fade-In Delay Added | ~309 |
+| #8173 | " | ✅ | The Record Section Fade-In Delay Added | ~320 |
+| #8168 | " | ✅ | Selected Work Section Fade-In Delay Added | ~335 |
+| #8162 | " | 🔴 | Newsletter Form Layout Shift Prevention | ~323 |
+| #8156 | 1:34 PM | 🟣 | Paper Texture Fade-In Animation Added | ~342 |
+| #8150 | " | 🔵 | Leonard Site React Component Structure Analyzed | ~483 |
+| #8145 | " | 🔵 | Leonard Site CSS Architecture Reviewed | ~459 |
 </claude-mem-context>
+
+---
+
+# Leonard Site - Project Context
+
+## ⚠️ CURRENT STATUS (Feb 7, 2026)
+
+**Site is 70% complete. CMS needs OAuth setup to work.**
+
+- ✅ Code pushed to GitHub: `leonard-robinson/leonard-site`
+- ✅ Deployed to Cloudflare Pages (live)
+- ⚠️ **NEXT: OAuth setup** (5 min) → Then Leonard can publish
+- ⚠️ **THEN: Custom domain** → Point leonardarobinson.com to site
+- ⚠️ **OPTIONAL: Domain transfer** → Move from WordPress to Cloudflare
+
+**📋 See detailed next steps:** `NEXT-STEPS.md` in project root
+
+---
+
+## Quick Reference
+
+**What is this?**
+Newspaper-themed portfolio site for Leonard A. Robinson (journalist) with blog publishing system.
+
+**GitHub:** `leonard-robinson/leonard-site`
+**Tech:** React + Vite + Decap CMS + Cloudflare Pages
+**Blog:** `/blog` (works) | **CMS:** `/admin` (needs OAuth to work)
+
+**Key files to reference:**
+- `NEXT-STEPS.md` — What to do next (detailed steps)
+- `CLOUDFLARE-DEPLOYMENT.md` — Full deployment guide
+- `SETUP-CHECKLIST.md` — Checkbox-style checklist
+
+---
+
+## Proactive Reminders
+
+**When user starts a new session:**
+→ "Want to finish Leonard's site? Just need OAuth setup (5 min) and custom domain (5 min), then it's fully working."
+
+**If user mentions Leonard's site:**
+→ Reference `NEXT-STEPS.md` and current status above
+
+**If 24+ hours pass:**
+→ "Should we complete the OAuth setup for Leonard's CMS? Without it, he can't publish posts."
+
+---
+
+## Critical Context
+
+1. **OAuth blocks everything** — `/admin` won't work until OAuth is configured
+2. **Domain transfer is safe** — DNS/email copy automatically, zero downtime
+3. **Leonard is non-technical** — He'll only use `/admin`, never see code
+4. **Email forwarding is free** — Set up after domain transfers to Cloudflare
+
+---
+
+## What's Next
+
+**Priority order:**
+1. OAuth setup (makes `/admin` login work)
+2. Custom domain (points leonardarobinson.com to site)
+3. Test publishing (verify Leonard can write posts)
+4. Domain transfer (optional, saves money)
+
+**See:** `NEXT-STEPS.md` for exact steps with commands
